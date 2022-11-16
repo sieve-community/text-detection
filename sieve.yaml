@@ -1,0 +1,18 @@
+build:
+  gpu: true
+  python_packages:
+  - easyocr==1.6.2
+  - torch==1.8.1
+  - opencv-python-headless==4.5.4.60
+  python_version: '3.8'
+  system_packages:
+  - libgl1-mesa-glx
+  - libglib2.0-0
+  - libsm6
+  - libxext6
+  - libxrender-dev
+iteration: video
+model_name: text-detector
+model_version: 0.0.0.0.1
+predict: predictor.py:TextDetector
+private: false
